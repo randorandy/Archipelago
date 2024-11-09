@@ -31,27 +31,27 @@ class ZFItem(Item):
 
 
 local_id_to_zf_item: Dict[int, ZFItem] = {
-    0x00: Items.Missile,
-    0x01: Items.Super,
-    0x02: Items.PowerBomb,
-    0x03: Items.Morph,
-    0x04: Items.Springball,
-    0x05: Items.Bombs,
-    0x06: Items.HiJump,
-    0x07: Items.GravitySuit,
-    0x08: Items.Varia,
+    0x00: Items.Energy,
+    0x01: Items.Missile,
+    0x02: Items.Super,
+    0x03: Items.PowerBomb,
+    0x04: Items.Bombs,
+    0x05: Items.Charge,
+    0x06: Items.Ice,
+    0x07: Items.HiJump,
+    0x08: Items.SpeedBooster,
     0x09: Items.Wave,
-    0x0a: Items.SpeedBooster,
-    0x0b: Items.Spazer,
-    0x0c: Items.Ice,
-    0x0d: Items.Grapple,
-    0x0e: Items.Plasma,
-    0x0f: Items.Screw,
-    0x10: Items.Charge,
+    0x0a: Items.Spazer,
+    0x0b: Items.Springball,
+    0x0c: Items.Varia,
+    0x0d: Items.GravitySuit,
+    0x0e: Items.Xray,
+    0x0f: Items.Plasma,
+    0x10: Items.Grapple,
     0x11: Items.SpaceJump,
-    0x12: Items.Energy,
-    0x13: Items.Reserve,
-    0x14: Items.Xray
+    0x12: Items.Screw,
+    0x13: Items.Morph,
+    0x14: Items.Reserve
 }
 
 
