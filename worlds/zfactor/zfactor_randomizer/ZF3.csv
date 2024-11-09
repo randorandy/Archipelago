@@ -1,0 +1,111 @@
+index,roomname,region,vanillaitemname,roomid,locationid,hiddenness,altlocationids
+1,Bomb Torizo Bombs,Outskirts,Item,7C895,7C895,open,0
+2,Varia Elevator Top Missile,Outskirts,Item,7C8E5,7C8E5,chozo,0
+3,Cliff Chozo Missile,Outskirts,Item,7C911,7C911,chozo,0
+4,Crateria Power Bomb,Outskirts,Item,7C943,7C943,open,0
+5,Old Mother Brain Missile,Outskirts,Item,7C949,7C949,open,0
+6,Mushroom Cave Energy Tank,Outskirts,Item,7C98F,7C98F,open,0
+7,Mushroom Cave Missile,Outskirts,Item,7C995,7C995,open,0
+8,Lake Tank Energy Tank,Outskirts,Item,7C9AB,7C9AB,open,0
+9,Grapple Cave Missile,Outskirts,Item,7C9BF,7C9BF,open,0
+10,Ocean Missile,Outskirts,Item,7C9E9,7C9E9,open,0
+11,Pancake House Missile,Outskirts,Item,7C9F1,7C9F1,open,0
+12,Creep Highway Missile,Outskirts,Item,7CA1B,7CA1B,open,0
+13,Red Bluff Super Missile,Outskirts,Item,7CB2B,7CB2B,open,0
+14,Varia Suit,Outskirts,Item,7CBB5,7CBB5,open,0
+15,Retro Brinstar Power Bomb,False Idol,Item,7CBD7,7CBD7,chozo,0
+16,Retro Brinstar Super Missile,False Idol,Item,7CBDD,7CBDD,chozo,0
+17,Construction Zone Missile,Deep Purple,Item,7CBEB,7CBEB,open,0
+18,Morph Ball,False Idol,Item,7CBF1,7CBF1,open,0
+19,Chozo Stash Missile,False Idol,Item,7CC11,7CC11,open,0
+20,Brinstar Pirate Cage Missile,False Idol,Item,7CC2D,7CC2D,open,0
+21,Clubhouse Super Missile,False Idol,Item,7CC47,7CC47,open,0
+22,Xray,False Idol,Item,7CC4F,7CC4F,hidden,0
+23,Sidehopper Alley Missile,False Idol,Item,7CC55,7CC55,open,0
+24,Spazer,False Idol,Item,7CC8D,7CC8D,chozo,0
+25,Hellraiser Missile,False Idol,Item,7CC95,7CC95,hidden,0
+26,Irrigation Energy Tank,False Idol,Item,7CCFF,7CCFF,open,0
+27,Grapple Beam,False Idol,Item,7CD37,7CD37,open,0
+28,Kraid Energy Tank,Deep Purple,Item,7CD3D,7CD3D,open,0
+29,Four Punks Power Bomb,Deep Purple,Item,7CD57,7CD57,open,0
+30,Ripper Hangout Missile,Deep Purple,Item,7CD6B,7CD6B,hidden,0
+31,Red Tower Secret Missile,Deep Purple,Item,7CD95,7CD95,open,0
+32,Red Tower Secret Power Bomb,Deep Purple,Item,7CD9B,7CD9B,open,0
+33,Red Bull Missile,Deep Purple,Item,7CDA3,7CDA3,open,0
+34,Red Bull Energy Tank,Deep Purple,Item,7CDA9,7CDA9,open,0
+35,Cactus Trap Energy Tank,Deep Purple,Item,7CDD1,7CDD1,open,0
+36,Dragon Spark Missile,Deep Purple,Item,7CDDF,7CDDF,open,0
+37,Wife Missile,Deep Purple,Item,7CE07,7CE07,open,0
+38,Husband Missile,Deep Purple,Item,7CE0D,7CE0D,open,0
+39,Flowerhead Power Bomb,Deep Purple,Item,7CE15,7CE15,chozo,0
+40,Charge Beam,Deep Purple,Item,7CE23,7CE23,open,0
+41,Elevator Cave Power Bomb,Deep Purple,Item,7CE6F,7CE6F,chozo,0
+42,Pet Slug Missile,Ice Castle,Item,7CEA7,7CEA7,open,0
+43,Crumble Bridge Super Missile,Ice Castle,Item,7CEAF,7CEAF,open,0
+44,Kihunter Alley Missile,Ice Castle,Item,7CED5,7CED5,open,0
+45,Treasure Island Missile,Ice Castle,Item,7CF2B,7CF2B,hidden,0
+46,Super Secret Save Energy Tank,Ice Castle,Item,7CF33,7CF33,open,0
+47,Brinstar Reserve Tank,Ice Castle,Item,7CF47,7CF47,chozo,0
+48,Crocomire Missile,Ice Castle,Item,7CFAB,7CFAB,open,0
+49,Bubble Road of Pain Missile,Ice Castle,Item,7CFD1,7CFD1,open,0
+50,Bird Cage Missile,Ice Castle,Item,7CFFD,7CFFD,open,0
+51,Screw Attack,Ice Castle,Item,7D07F,7D07F,open,0
+52,Kago Missile,Ice Castle,Item,7D087,7D087,open,0
+53,Pink Cage Missile,Ice Castle,Item,7D133,7D133,open,0
+54,Ridley Energy Tank,Ice Castle,Item,7D13B,7D13B,open,0
+55,Lava Dive Energy Tank,Ice Castle,Item,7D20B,7D20B,hidden,0
+56,Crocomire Power Bomb,Blood Bethel,Item,7D251,7D251,chozo,0
+57,Factory Energy Tank,Blood Bethel,Item,7D27D,7D27D,open,0
+58,Borderlands Missile,Blood Bethel,Item,7D2AB,7D2AB,open,0
+59,Pool Party Missile,Blood Bethel,Item,7D2C1,7D2C1,open,0
+60,Norfair Entrance Missile,Blood Bethel,Item,7D2E3,7D2E3,open,0
+61,Pain Missile,Blood Bethel,Item,7D2EB,7D2EB,open,0
+62,HiJump Missile,Blood Bethel,Item,7D2FF,7D2FF,chozo,0
+63,HiJump Boots,Blood Bethel,Item,7D305,7D305,open,0
+64,Norfair Reserve Tank,Blood Bethel,Item,7D333,7D333,chozo,0
+65,Lava Chozo Missile,Blood Bethel,Item,7D361,7D361,chozo,0
+66,Early Super Missile,Blood Bethel,Item,7D375,7D375,chozo,0
+67,Dentist Missile,Blood Bethel,Item,7D389,7D389,open,0
+68,Spikesuit Power Bomb,Blood Bethel,Item,7D39D,7D39D,chozo,0
+69,Hideout Energy Tank,Blood Bethel,Item,7D3D7,7D3D7,chozo,0
+70,Fire Island Missile,Sheol,Item,7D403,7D403,open,0
+71,Thats Cool Missile,Z Factor,Item,7D40B,7D40B,hidden,0
+72,Dragon Lake Missile,Z Factor,Item,7D421,7D421,hidden,0
+73,Ice Beam,Z Factor,Item,7D443,7D443,chozo,0
+74,Farm Chozo Missile,Z Factor,Item,7D461,7D461,chozo,0
+75,Wave Beam,Z Factor,Item,7D4B5,7D4B5,open,0
+76,Gravity Suit,Z Factor,Item,7D4ED,7D4ED,open,0
+77,Gutterball Super Missile,Z Factor,Item,7D52D,7D52D,chozo,0
+78,Chozo Jail Missile,Z Factor,Item,7D573,7D573,chozo,0
+79,Wrecked Ship Reserve Tank,Z Factor,Item,7D5ED,7D5ED,open,0
+80,Broken Hold Missile,Z Factor,Item,7D68D,7D68D,hidden,0
+81,Tenderizer Power Bomb,Z Factor,Item,7D6EF,7D6EF,open,0
+82,Pancake Drop Energy Tank,Z Factor,Item,7D71B,7D71B,open,0
+83,Poopdeck Missile,Z Factor,Item,7D73B,7D73B,chozo,0
+84,Piranha Tank Super Missile,Z Factor,Item,7D77B,7D77B,hidden,0
+85,Kitchen Missile,Z Factor,Item,7D7E1,7D7E1,hidden,0
+86,Shaktool Reserve Tank,Z Factor,Item,7D859,7D859,open,0
+87,Sandfall Secret Missile,Z Factor,Item,7D879,7D879,hidden,0
+88,Speed Booster,Z Factor,Item,7D8F9,7D8F9,chozo,0
+89,Sandpit Power Bomb,Z Factor,Item,7D923,7D923,chozo,0
+90,Farmhouse Energy Tank,Z Factor,Item,7D93B,7D93B,open,0
+91,Springball,Z Factor,Item,7D967,7D967,chozo,0
+92,Aquaman Super Missile,Z Factor,Item,7D975,7D975,chozo,0
+93,Sunken Save Station Missile,Z Factor,Item,7D989,7D989,hidden,0
+94,Tor Missile,Z Factor,Item,7D9A7,7D9A7,open,0
+95,Pink Pirate House Missile,Z Factor,Item,7D9CB,7D9CB,chozo,0
+96,Everest Missile,Z Factor,Item,7D9F1,7D9F1,open,0
+97,Mama Turtle Right Missile,Z Factor,Item,7DA15,7DA15,open,0
+98,Mama Turtle Left Missile,Z Factor,Item,7DA1B,7DA1B,open,0
+99,Blue Bull Missile,Z Factor,Item,7DA55,7DA55,open,0
+100,Fortress Missile,Z Factor,Item,7DA81,7DA81,chozo,0
+101,Eden Missile,Z Factor,Item,7DABD,7DABD,hidden,0
+102,Purple Guy Missile,Z Factor,Item,7DAC5,7DAC5,open,0
+103,Tube Spark Super Missile,Z Factor,Item,7DAD9,7DAD9,open,0
+104,Pipe Dream Super Missile,Z Factor,Item,7DB51,7DB51,open,0
+105,Grapple Climb Missile,Z Factor,Item,7DB7D,7DB7D,open,0
+106,Space Jump,Z Factor,Item,7DBD1,7DBD1,chozo,0
+107,Jailbird Missile,Z Factor,Item,7DBD9,7DBD9,chozo,0
+108,Evidence Energy Tank,Z Factor,Item,7DBE7,7DBE7,open,0
+109,Pre Crumble City Missile,Z Factor,Item,7DC19,7DC19,hidden,0
+110,Plasma Beam,Z Factor,Item,7DC2D,7DC2D,open,0
