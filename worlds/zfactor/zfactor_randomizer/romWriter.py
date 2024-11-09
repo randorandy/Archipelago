@@ -142,6 +142,34 @@ class RomWriter:
                 with open(patch_path.joinpath('Zfactor_v1.3__uh_.ips'), 'rb') as file:
                     patch_data = file.read()
                 self.rom_data = patch(self.rom_data, patch_data)
+
+                #adding other Z-factor rando patches
+                patch_path = pathlib.Path(__file__).parent.resolve()
+                with open(patch_path.joinpath('Patches/Level Patch.IPS'), 'rb') as file:
+                    patch_data = file.read()
+                self.rom_data = patch(self.rom_data, patch_data)
+
+                patch_path = pathlib.Path(__file__).parent.resolve()
+                with open(patch_path.joinpath('Patches/Zebes Awakens Patch.IPS'), 'rb') as file:
+                    patch_data = file.read()
+                self.rom_data = patch(self.rom_data, patch_data)
+
+                patch_path = pathlib.Path(__file__).parent.resolve()
+                with open(patch_path.joinpath('Patches/max_ammo_display.ips'), 'rb') as file:
+                    patch_data = file.read()
+                self.rom_data = patch(self.rom_data, patch_data)
+
+                patch_path = pathlib.Path(__file__).parent.resolve()
+                with open(patch_path.joinpath('Patches/Disable Suit Animation.IPS'), 'rb') as file:
+                    patch_data = file.read()
+                self.rom_data = patch(self.rom_data, patch_data)
+
+                patch_path = pathlib.Path(__file__).parent.resolve()
+                with open(patch_path.joinpath('Patches/JAMMorphingBallFix.IPS'), 'rb') as file:
+                    patch_data = file.read()
+                self.rom_data = patch(self.rom_data, patch_data)
+
+
                 #assert len(self.rom_data) == 4194304, f"patch made file {len(self.rom_data)}"
                 #assert len(self.rom_data) == 3178496, f"patch made file {len(self.rom_data)}" #CR
                 assert len(self.rom_data) == 3309568, f"patch made file {len(self.rom_data)}" #ZF
