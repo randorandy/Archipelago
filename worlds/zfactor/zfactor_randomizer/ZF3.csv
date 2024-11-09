@@ -1,4 +1,5 @@
 index,roomname,region,vanillaitemname,roomid,locationid,hiddenness,altlocationids
+0,Jailbird Missile,Z Factor,Item,7DBD9,7DBD9,chozo,0
 1,Bomb Torizo Bombs,Outskirts,Item,7C895,7C895,open,0
 2,Varia Elevator Top Missile,Outskirts,Item,7C8E5,7C8E5,chozo,0
 3,Cliff Chozo Missile,Outskirts,Item,7C911,7C911,chozo,0
@@ -84,28 +85,29 @@ index,roomname,region,vanillaitemname,roomid,locationid,hiddenness,altlocationid
 83,Poopdeck Missile,Z Factor,Item,7D73B,7D73B,chozo,0
 84,Piranha Tank Super Missile,Z Factor,Item,7D77B,7D77B,hidden,0
 85,Kitchen Missile,Z Factor,Item,7D7E1,7D7E1,hidden,0
-86,Shaktool Reserve Tank,Z Factor,Item,7D859,7D859,open,0
-87,Sandfall Secret Missile,Z Factor,Item,7D879,7D879,hidden,0
-88,Speed Booster,Z Factor,Item,7D8F9,7D8F9,chozo,0
-89,Sandpit Power Bomb,Z Factor,Item,7D923,7D923,chozo,0
-90,Farmhouse Energy Tank,Z Factor,Item,7D93B,7D93B,open,0
-91,Springball,Z Factor,Item,7D967,7D967,chozo,0
-92,Aquaman Super Missile,Z Factor,Item,7D975,7D975,chozo,0
-93,Sunken Save Station Missile,Z Factor,Item,7D989,7D989,hidden,0
-94,Tor Missile,Z Factor,Item,7D9A7,7D9A7,open,0
-95,Pink Pirate House Missile,Z Factor,Item,7D9CB,7D9CB,chozo,0
-96,Everest Missile,Z Factor,Item,7D9F1,7D9F1,open,0
-97,Mama Turtle Right Missile,Z Factor,Item,7DA15,7DA15,open,0
-98,Mama Turtle Left Missile,Z Factor,Item,7DA1B,7DA1B,open,0
-99,Blue Bull Missile,Z Factor,Item,7DA55,7DA55,open,0
-100,Fortress Missile,Z Factor,Item,7DA81,7DA81,chozo,0
-101,Eden Missile,Z Factor,Item,7DABD,7DABD,hidden,0
-102,Purple Guy Missile,Z Factor,Item,7DAC5,7DAC5,open,0
-103,Tube Spark Super Missile,Z Factor,Item,7DAD9,7DAD9,open,0
-104,Pipe Dream Super Missile,Z Factor,Item,7DB51,7DB51,open,0
-105,Grapple Climb Missile,Z Factor,Item,7DB7D,7DB7D,open,0
-106,Space Jump,Z Factor,Item,7DBD1,7DBD1,chozo,0
-107,Jailbird Missile,Z Factor,Item,7DBD9,7DBD9,chozo,0
-108,Evidence Energy Tank,Z Factor,Item,7DBE7,7DBE7,open,0
-109,Pre Crumble City Missile,Z Factor,Item,7DC19,7DC19,hidden,0
-110,Plasma Beam,Z Factor,Item,7DC2D,7DC2D,open,0
+86,Plasma Beam,Z Factor,Item,7DC2D,7DC2D,open,0
+87,Pre Crumble City Missile,Z Factor,Item,7DC19,7DC19,hidden,0
+88,Evidence Energy Tank,Z Factor,Item,7DBE7,7DBE7,open,0
+89,Shaktool Reserve Tank,Z Factor,Item,7D859,7D859,open,0
+90,Sandfall Secret Missile,Z Factor,Item,7D879,7D879,hidden,0
+91,Speed Booster,Z Factor,Item,7D8F9,7D8F9,chozo,0
+92,Sandpit Power Bomb,Z Factor,Item,7D923,7D923,chozo,0
+93,Farmhouse Energy Tank,Z Factor,Item,7D93B,7D93B,open,0
+94,Springball,Z Factor,Item,7D967,7D967,chozo,0
+95,Aquaman Super Missile,Z Factor,Item,7D975,7D975,chozo,0
+96,Sunken Save Station Missile,Z Factor,Item,7D989,7D989,hidden,0
+97,Tor Missile,Z Factor,Item,7D9A7,7D9A7,open,0
+98,Pink Pirate House Missile,Z Factor,Item,7D9CB,7D9CB,chozo,0
+99,Everest Missile,Z Factor,Item,7D9F1,7D9F1,open,0
+100,Mama Turtle Right Missile,Z Factor,Item,7DA15,7DA15,open,0
+101,Mama Turtle Left Missile,Z Factor,Item,7DA1B,7DA1B,open,0
+102,Blue Bull Missile,Z Factor,Item,7DA55,7DA55,open,0
+103,Fortress Missile,Z Factor,Item,7DA81,7DA81,chozo,0
+104,Eden Missile,Z Factor,Item,7DABD,7DABD,hidden,0
+105,Purple Guy Missile,Z Factor,Item,7DAC5,7DAC5,open,0
+106,Tube Spark Super Missile,Z Factor,Item,7DAD9,7DAD9,open,0
+107,Pipe Dream Super Missile,Z Factor,Item,7DB51,7DB51,open,0
+108,Grapple Climb Missile,Z Factor,Item,7DB7D,7DB7D,open,0
+109,Space Jump,Z Factor,Item,7DBD1,7DBD1,chozo,0
+
+
