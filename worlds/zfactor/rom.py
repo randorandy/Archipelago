@@ -94,9 +94,12 @@ def write_rom_from_gen_data(gen_data_str: str, output_rom_file_name: str) -> Non
 
     rom_writer.rom_data = ItemRomData.patch_from_json(rom_writer.rom_data, gen_data.item_rom_data)
 
-    # change values for chozo ball hearts and lucky frog to match the open variant
-    #rom_writer.writeBytes(0x026474, b"\x19")
-    #rom_writer.writeBytes(0x026909, b"\x32")
+    #include z-factor randomizer patches
+    #rom_writer.rom_data = ips_patch_from_file("zfactor_randomizer/Patches/Level Patch.IPS", rom_writer.rom_data)
+    #rom_writer.rom_data = ips_patch_from_file("zfactor_randomizer/Patches/Zebes Awakens Patch.IPS", rom_writer.rom_data)
+    #rom_writer.rom_data = ips_patch_from_file("zfactor_randomizer/Patches/max_ammo_display.ips", rom_writer.rom_data)
+    #rom_writer.rom_data = ips_patch_from_file("zfactor_randomizer/Patches/Disable Suit Animation.IPS", rom_writer.rom_data)
+    #rom_writer.rom_data = ips_patch_from_file("zfactor_randomizer/Patches/JAMMorphingBallFix.IPS", rom_writer.rom_data)
 
     for loc in gen_data.cr_game.all_locations.values():
         if loc["hiddenness"] == "hidden":
@@ -130,5 +133,20 @@ def write_rom_from_gen_data(gen_data_str: str, output_rom_file_name: str) -> Non
     rom_writer.writeBytes(0x787d3, b"\xcd")
     rom_writer.writeBytes(0x7812b, b"\x09\x03\x70")
     rom_writer.writeBytes(0x7813b, b"\xbf")
+
+    # item indexing fixes
+    rom_writer.writeBytes(0x7dbdd, b"\x00")
+    rom_writer.writeBytes(0x7dc31, b"\x56")
+    rom_writer.writeBytes(0x7dc1d, b"\x57")
+    rom_writer.writeBytes(0x7dbeb, b"\x58")
+    # SSR indexing fixes
+    rom_writer.writeBytes(0x7d7ed, b"\x6f")
+    rom_writer.writeBytes(0x7d7f3, b"\x70")
+    rom_writer.writeBytes(0x7d7f9, b"\x71")
+    # SSR new items
+    rom_writer.writeBytes(0x7d7e9, b"\xd7\xee")
+    rom_writer.writeBytes(0x7d7ef, b"\xd7\xee")
+    rom_writer.writeBytes(0x7d7f5, b"\xd7\xee")
+    
 
     rom_writer.finalizeRom(output_rom_file_name)  # writes rom file
