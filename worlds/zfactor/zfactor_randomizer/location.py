@@ -22,7 +22,7 @@ def pullCSV() -> dict[str, Location]:
     csvdict: dict[str, Location] = {}
 
     def commentfilter(line: str) -> bool:
-        return (line[0] != '#')
+        return (len(line) > 0 and line[0] != '#')
 
     csv_data = pkgutil.get_data(__name__, "ZF3.csv")
     if csv_data is None:
