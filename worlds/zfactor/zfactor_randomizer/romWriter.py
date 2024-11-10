@@ -1,7 +1,7 @@
 import base64
 import enum
 import os
-import pathlib
+import pkgutil
 from typing import Optional, Union
 
 from .ips import patch
@@ -138,37 +138,19 @@ class RomWriter:
         #if len(self.rom_data) != 3178496:  # cliffhanger redux rom ?
         if len(self.rom_data) != 4194304:  # redesign !?!?
             if len(self.rom_data) == 3145728:  # vanilla SM
-                patch_path = pathlib.Path(__file__).parent.resolve()
-                with open(patch_path.joinpath('Zfactor_v1.3__uh_.ips'), 'rb') as file:
-                    patch_data = file.read()
-                self.rom_data = patch(self.rom_data, patch_data)
-
-                #adding other Z-factor rando patches
-                patch_path = pathlib.Path(__file__).parent.resolve()
-                with open(patch_path.joinpath('Patches/Level Patch.IPS'), 'rb') as file:
-                    patch_data = file.read()
-                self.rom_data = patch(self.rom_data, patch_data)
-
-                patch_path = pathlib.Path(__file__).parent.resolve()
-                with open(patch_path.joinpath('Patches/Zebes Awakens Patch.IPS'), 'rb') as file:
-                    patch_data = file.read()
-                self.rom_data = patch(self.rom_data, patch_data)
-
-                patch_path = pathlib.Path(__file__).parent.resolve()
-                with open(patch_path.joinpath('Patches/max_ammo_display.ips'), 'rb') as file:
-                    patch_data = file.read()
-                self.rom_data = patch(self.rom_data, patch_data)
-
-                patch_path = pathlib.Path(__file__).parent.resolve()
-                with open(patch_path.joinpath('Patches/Disable Suit Animation.IPS'), 'rb') as file:
-                    patch_data = file.read()
-                self.rom_data = patch(self.rom_data, patch_data)
-
-                patch_path = pathlib.Path(__file__).parent.resolve()
-                with open(patch_path.joinpath('Patches/JAMMorphingBallFix.IPS'), 'rb') as file:
-                    patch_data = file.read()
-                self.rom_data = patch(self.rom_data, patch_data)
-
+                ips_patches = (
+                    'Zfactor_v1.3__uh_.ips',
+                    'Patches/Level Patch.IPS',
+                    'Patches/Zebes Awakens Patch.IPS',
+                    'Patches/max_ammo_display.ips',
+                    'Patches/Disable Suit Animation.IPS',
+                    'Patches/JAMMorphingBallFix.IPS',
+                )
+                for patch_path in ips_patches:
+                    patch_data = pkgutil.get_data(__name__, patch_path)
+                    if patch_data is None:
+                        raise RuntimeError(f"unable to read {patch_path} from {__name__}")
+                    self.rom_data = patch(self.rom_data, patch_data)
 
                 #assert len(self.rom_data) == 4194304, f"patch made file {len(self.rom_data)}"
                 #assert len(self.rom_data) == 3178496, f"patch made file {len(self.rom_data)}" #CR

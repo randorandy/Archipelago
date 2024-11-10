@@ -93,7 +93,7 @@ class ZFWorld(World):
 
     def create_items(self) -> None:
         count_e = 0  # 12 Energy are progression , the rest are not
-        count_m = 0 # 4 Missiles are progression, the rest are not
+        count_m = 0  # 4 Missiles are progression, the rest are not
         count_s = 0  # 5 Supers are progression, the rest are not
         count_p = 0  # 5 PowerBombs are progression, the rest are not
         for name in names_for_item_pool():
@@ -145,9 +145,9 @@ class ZFWorld(World):
 
         patch_file_name = os.path.join(output_directory, f"{out_file_base}{ZFDeltaPatch.patch_file_ending}")
         patch = ZFDeltaPatch(patch_file_name,
-                                       player=self.player,
-                                       player_name=self.multiworld.player_name[self.player],
-                                       gen_data=make_gen_data(gen_data))
+                             player=self.player,
+                             player_name=self.multiworld.player_name[self.player],
+                             gen_data=make_gen_data(gen_data))
 
         patch.write()
 
