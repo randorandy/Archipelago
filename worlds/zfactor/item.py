@@ -5,7 +5,7 @@ from BaseClasses import Item, ItemClassification as IC
 
 from .config import base_id
 
-from .zfactor_randomizer.item import Item as ZFItem, Items
+from .zfactor_randomizer.item import Item as ZFInternalItem, Items
 from .zfactor_randomizer.fillAssumed import FillAssumed
 
 classifications: Dict[str, IC] = defaultdict(lambda: IC.progression)
@@ -21,7 +21,7 @@ classifications.update({
 class ZFItem(Item):
     game = "Z Factor"
     __slots__ = ("zf_item",)
-    zf_item: ZFItem
+    zf_item: ZFInternalItem
 
     def __init__(self, name: str, player: int) -> None:
         classification = classifications[name]
@@ -30,7 +30,7 @@ class ZFItem(Item):
         self.zf_item = id_to_zf_item[code]
 
 
-local_id_to_zf_item: Dict[int, ZFItem] = {
+local_id_to_zf_item: Dict[int, ZFInternalItem] = {
     0x00: Items.Energy,
     0x01: Items.Missile,
     0x02: Items.Super,
