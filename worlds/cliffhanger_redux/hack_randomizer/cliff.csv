@@ -1,0 +1,101 @@
+index,roomname,region,vanillaitemname,roomid,locationid,hiddenness,altlocationids
+26,Morph Ball,Cliffhanger,Missile,0x786DE,0x786DE,open,0
+47,Morph Ball Redux,Cliffhanger,Missile,0x78716,0x78716,open,0
+34,Alpha Missile,Cliffhanger,Missile,0x78802,0x78802,chozo,0
+7,Bombs,Cliffhanger,Missile,0x78404,0x78404,chozo,0
+42,Red Pool Energy Tank,Cliffhanger,Missile,0x7896E,0x7896E,chozo,0
+68,Crater Missile,Cliffhanger,Missile,0x7800C,0x7800C,hidden,0
+249,Crater Xray,Cliffhanger,Missile,0x78018,0x78018,open,0x78026
+212,Parlor Low Missile,Cliffhanger,Missile,0x780DE,0x780DE,hidden,0
+236,G4 Missile,Cliffhanger,Missile,0x781D4,0x781D4,hidden,0
+162,WS Entry Energy Tank OR 12 Cliffhnagers,Cliffhanger,Missile,0x781E8,0x781E8,open,0x7C571
+199,Crateria Kihunters Missile,Cliffhanger,Missile,0x7820A,0x7820A,hidden,0
+4,Moat Missile,Cliffhanger,Missile,0x78248,0x78248,hidden,0
+16,Crat-Red Elevator Missile,Cliffhanger,Missile,0x78256,0x78256,hidden,0
+71,Climb Missile,Cliffhanger,Missile,0x7826E,0x7826E,chozo,0
+29,Climb Experiments Power Bomb,Cliffhanger,Missile,0x78420,0x78420,hidden,0
+40,Spazer,Cliffhanger,Missile,0x78432,0x78432,hidden,0
+182,Speedkeep Flower Missile,Cliffhanger,Missile,0x78CCA,0x78CCA,hidden,0
+30,Gauntlet Power Bomb,Cliffhanger,Missile,0x78470,0x78470,chozo,0
+221,Spazer Eye Missile,Cliffhanger,Missile,0x78478,0x78478,chozo,0
+88,Baby Kraid Missile,Cliffhanger,Missile,0x78518,0x78518,hidden,0
+35,Zigzag Super Missile,Cliffhanger,Missile,0x7C48B,0x7C48B,open,0
+62,Kraid Energy Tank,Cliffhanger,Missile,0x78550,0x78550,hidden,0
+22,Big Pink Energy Tank,Cliffhanger,Missile,0x7860E,0x7860E,open,0
+8,Billy Maze Super Energy Tank,Cliffhanger,Missile,0x7864A,0x7864A,open,0
+25,Pink Pillar Missile,Cliffhanger,Missile,0x78676,0x78676,open,0
+96,Construction Zone Missile,Cliffhanger,Missile,0x7877E,0x7877E,hidden,0
+28,Billy Mays Missile,Cliffhanger,Missile,0x78798,0x78798,hidden,0
+10,Blue Heads Power Bomb,Cliffhanger,Missile,0x787B0,0x787B0,hidden,0
+5,Brinstar Entry Missile,Cliffhanger,Missile,0x781CC,0x781CC,open,0
+189,Jabba Missile,Cliffhanger,Missile,0x78824,0x78824,hidden,0x7C6D7
+36,Beyond Bull Prize Energy Tank,Cliffhanger,Missile,0x78836,0x78836,hidden,0
+179,Blue Tower Power Bomb,Cliffhanger,Missile,0x78866,0x78866,chozo,0
+134,Evir Exit Power Bomb,Cliffhanger,Missile,0x7C365,0x7C365,open,0
+175,Museum Super Ceiling Missile,Cliffhanger,Missile,0x7888C,0x7888C,hidden,0
+23,Charge Beam,Cliffhanger,Missile,0x78898,0x78898,hidden,0
+61,Museum Energy Tank,Cliffhanger,Missile,0x788B6,0x788B6,chozo,0
+69,Screw Attack,Cliffhanger,Missile,0x78D9C,0x78D9C,hidden,0
+48,Ice Beam,Cliffhanger,Missile,0x78ACA,0x78ACA,chozo,0
+2,King Smurf Missile,Cliffhanger,Missile,0x78AE4,0x78AE4,hidden,0
+233,Tripper Missile,Cliffhanger,Missile,0x78B2C,0x78B2C,hidden,0
+52,Croc Power Bomb,Cliffhanger,Missile,0x78BA4,0x78BA4,chozo,0
+54,Conveyor Super Missile,Cliffhanger,Missile,0x78BC0,0x78BC0,open,0
+157,Castle Store Missile 1,Cliffhanger,Missile,0x78D58,0x78D58,chozo,0
+235,Castle Store Missile 3,Cliffhanger,Missile,0x78D5E,0x78D5E,chozo,0
+237,Castle Store Missile 4,Cliffhanger,Missile,0x78D70,0x78D70,chozo,0
+174,Castle Store Missile 2,Cliffhanger,Missile,0x78D76,0x78D76,chozo,0
+82,Orb Fall Missile,Cliffhanger,Missile,0x78C0C,0x78C0C,hidden,0
+251,Ninja Power Bomb,Cliffhanger,Missile,0x78C22,0x78C22,hidden,0
+144,Covern Ceiling Missile,Cliffhanger,Missile,0x78AF2,0x78AF2,hidden,0
+147,Dragon Pipes Super Missile,Cliffhanger,Missile,0x78C44,0x78C44,hidden,0
+85,Speed Missile,Cliffhanger,Missile,0x78C7A,0x78C7A,hidden,0
+66,Speed Booster,Cliffhanger,Missile,0x78C82,0x78C82,chozo,0
+168,Cathedral Kago Missile,Cliffhanger,Missile,0x78CB0,0x78CB0,hidden,0
+113,Leaf Bypass Missile,Cliffhanger,Missile,0x78D16,0x78D16,hidden,0
+75,Lava Monster Energy Tank,Cliffhanger,Missile,0x78FD2,0x78FD2,open,0
+39,Gravity Suit,Cliffhanger,Missile,0x78876,0x78876,open,0
+81,Brin Map Super Missile,Cliffhanger,Missile,0x78976,0x78976,open,0
+89,GT Power Bomb,Cliffhanger,Missile,0x78E7A,0x78E7A,hidden,0
+141,Reserve Tank 4,Cliffhanger,Missile,0x790D0,0x790D0,hidden,0
+220,Reserve Tank 2,Cliffhanger,Missile,0x790F4,0x790F4,hidden,0
+149,Reserve Tank 1,Cliffhanger,Missile,0x790FA,0x790FA,hidden,0
+77,Reserve Tank 3,Cliffhanger,Missile,0x79100,0x79100,hidden,0
+94,Hangman Robot Missile,Cliffhanger,Missile,0x7902E,0x7902E,open,0
+136,WS Kaizo Pillar Missile,Cliffhanger,Missile,0x7C437,0x7C437,hidden,0
+176,WS Fish Tank Missile,Cliffhanger,Missile,0x7C43D,0x7C43D,hidden,0
+138,Mama Turtle Energy Tank,Cliffhanger,Missile,0x7C47D,0x7C47D,open,0
+139,Mama Turtle Missile,Cliffhanger,Missile,0x7C483,0x7C483,hidden,0
+161,Botwoon Hallway Mid Missile,Cliffhanger,Missile,0x7C645,0x7C645,chozo,0
+140,Mohawk Energy Tank,Cliffhanger,Missile,0x7C4AF,0x7C4AF,hidden,0
+187,Steam Super Missile,Cliffhanger,Missile,0x7C4B5,0x7C4B5,hidden,0
+203,Early Hedron Power Bomb,Cliffhanger,Missile,0x7C4CF,0x7C4CF,chozo,0
+170,Springball Missile,Cliffhanger,Missile,0x7C541,0x7C541,hidden,0
+37,HiJump Missile,Cliffhanger,Missile,0x787EE,0x787EE,hidden,0
+33,HiJump,Cliffhanger,Missile,0x787FA,0x787FA,chozo,0
+145,Crumble Ocean Super Missile,Cliffhanger,Missile,0x7C5E3,0x7C5E3,open,0
+20,Bull Hidden Missile,Cliffhanger,Missile,0x7C5F1,0x7C5F1,hidden,0
+119,Bull Arena Missile,Cliffhanger,Missile,0x7C6C5,0x7C6C5,chozo,0
+150,Springball,Cliffhanger,Missile,0x7C6E5,0x7C6E5,chozo,0
+130,Brin Northeast Speed Super Missile,Cliffhanger,Missile,0x7C7AF,0x7C7AF,open,0
+143,Plasma Beam,Cliffhanger,Missile,0x7C559,0x7C559,hidden,0
+64,Bowling Missile,Cliffhanger,Missile,0x7C2EF,0x7C2EF,hidden,0
+152,Bowling Energy Tank OR Draygon Chozo,Cliffhanger,Missile,0x7C2E9,0x7C2E9,open,0x7C6EF
+132,Phantoon Super Missile,Cliffhanger,Missile,0x7C337,0x7C337,chozo,0
+122,Space Jump,Cliffhanger,Missile,0x788D0,0x788D0,chozo,0
+58,Wave Beam,Cliffhanger,Missile,0x78C14,0x78C14,chozo,0
+59,Sub Cathedral Energy Tank,Cliffhanger,Missile,0x78F3C,0x78F3C,chozo,0
+76,Varia Suit,Cliffhanger,Missile,0x790C0,0x790C0,open,0
+142,Grapple Beam,Cliffhanger,Missile,0x7C533,0x7C533,hidden,0
+164,Green Brin Sky Missile,Cliffhanger,Missile,0x784CA,0x784CA,open,0
+17,Brinstar Reserve Redux Super,Cliffhanger,Missile,0x7852C,0x7852C,chozo,0
+49,Back Lab Super Missile,Cliffhanger,Missile,0x78B24,0x78B24,hidden,0
+73,Grapple Gladiator Energy Tank,Cliffhanger,Missile,0x78F30,0x78F30,hidden,0
+128,Botwoon Hallway Right Missile,Cliffhanger,Missile,0x7C63F,0x7C63F,chozo,0x7C265
+204,Botwoon Hallway Top Missile,Cliffhanger,Missile,0x7C69F,0x7C69F,hidden,0
+169,Post Gladiator Missile,Cliffhanger,Missile,0x78D1E,0x78D1E,open,0
+57,Dragon Bones Energy Tank,Cliffhanger,Missile,0x78C04,0x78C04,chozo,0
+165,Under Lava Missile,Cliffhanger,Missile,0x78C5A,0x78C5A,hidden,0
+253,Under Lava Power Bomb,Cliffhanger,Missile,0x78C66,0x78C66,chozo,0
+185,LN Elevator Missile,Cliffhanger,Missile,0x78E36,0x78E36,hidden,0
+133,Varia Missile,Cliffhanger,Missile,0x7C357,0x7C357,chozo,0
