@@ -1,14 +1,14 @@
 index,roomname,region,vanillaitemname,roomid,locationid,hiddenness,altlocationids
 26,Morph Ball,Cliffhanger,Missile,0x786DE,0x786DE,open,0
+47,Morph Ball Redux,Cliffhanger,Missile,0x78716,0x78716,open,0
 34,Alpha Missile,Cliffhanger,Missile,0x78802,0x78802,chozo,0
 7,Bombs,Cliffhanger,Missile,0x78404,0x78404,chozo,0
 42,Red Pool Energy Tank,Cliffhanger,Missile,0x7896E,0x7896E,chozo,0
-47,Morph Ball Redux,Cliffhanger,Missile,0x78716,0x78716,open,0
 68,Crater Missile,Cliffhanger,Missile,0x7800C,0x7800C,hidden,0
 249,Crater Xray,Cliffhanger,Missile,0x78018,0x78018,open,0x78026
 212,Parlor Low Missile,Cliffhanger,Missile,0x780DE,0x780DE,hidden,0
 236,G4 Missile,Cliffhanger,Missile,0x781D4,0x781D4,hidden,0
-162,WS Entry Energy Tank,Cliffhanger,Missile,0x781E8,0x781E8,open,0x7C571
+162,WS Entry Energy Tank OR 12 Cliffhnagers,Cliffhanger,Missile,0x781E8,0x781E8,open,0x7C571
 199,Crateria Kihunters Missile,Cliffhanger,Missile,0x7820A,0x7820A,hidden,0
 4,Moat Missile,Cliffhanger,Missile,0x78248,0x78248,hidden,0
 16,Crat-Red Elevator Missile,Cliffhanger,Missile,0x78256,0x78256,hidden,0
@@ -80,7 +80,7 @@ index,roomname,region,vanillaitemname,roomid,locationid,hiddenness,altlocationid
 130,Brin Northeast Speed Super Missile,Cliffhanger,Missile,0x7C7AF,0x7C7AF,open,0
 143,Plasma Beam,Cliffhanger,Missile,0x7C559,0x7C559,hidden,0
 64,Bowling Missile,Cliffhanger,Missile,0x7C2EF,0x7C2EF,hidden,0
-152,Bowling Energy Tank,Cliffhanger,Missile,0x7C2E9,0x7C2E9,open,0x7C6EF
+152,Bowling Energy Tank OR Draygon Chozo,Cliffhanger,Missile,0x7C2E9,0x7C2E9,open,0x7C6EF
 132,Phantoon Super Missile,Cliffhanger,Missile,0x7C337,0x7C337,chozo,0
 122,Space Jump,Cliffhanger,Missile,0x788D0,0x788D0,chozo,0
 58,Wave Beam,Cliffhanger,Missile,0x78C14,0x78C14,chozo,0

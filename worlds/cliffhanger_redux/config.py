@@ -7,7 +7,7 @@ import sys
 from typing import IO, Any, Literal, Tuple, Union, overload
 import zipfile
 
-base_id = 8760000
+base_id = 360000000
 
 # support for AP world (somewhat copied from SM)
 _module_file_name = sys.modules[__name__].__file__

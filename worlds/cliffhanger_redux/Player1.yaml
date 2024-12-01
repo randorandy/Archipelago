@@ -37,7 +37,7 @@ Cliffhanger Redux:
   # Item & Location Options
   local_items:
     # Forces these items to be in their native world.
-    ["Morph Ball"]
+    []
 
   non_local_items:
     # Forces these items to be outside their native world.
