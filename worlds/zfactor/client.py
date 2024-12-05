@@ -66,8 +66,8 @@ class ZFSNIClient(SNIClient):
         if (
                 rom_name is None or
                 len(rom_name) != 21 or
-                rom_name[0] != ord("C") or
-                rom_name[1] != ord("R") or
+                rom_name[0] != ord("Z") or
+                rom_name[1] != ord("F") or
                 rom_name[2] < ord("0") or
                 rom_name[2] > ord("9")
         ):
