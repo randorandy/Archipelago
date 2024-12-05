@@ -131,7 +131,7 @@ class ZFWorld(World):
         # set rom name
         from Utils import __version__
         rom_name = bytearray(
-            f'CR{__version__.replace(".", "")[0:3]}_{self.player}_{self.multiworld.seed:11}',
+            f'ZF{__version__.replace(".", "")[0:3]}_{self.player}_{self.multiworld.seed:11}',
             'utf8'
         )[:21]
         rom_name.extend(b" " * (21 - len(rom_name)))
