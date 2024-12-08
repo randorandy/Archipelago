@@ -85,7 +85,7 @@ def write_rom_from_gen_data(gen_data_str: str, output_rom_file_name: str) -> Non
     gen_data = get_gen_data(gen_data_str)
 
     base_rom_path = get_base_rom_path()
-    rom_writer = RomWriter.fromFilePath(base_rom_path)  # this patches SM to ZFactor
+    rom_writer = RomWriter.fromFilePath(base_rom_path)  # this patches SM to the hack
 
     multi_patch_path = get_multi_patch_path()
     rom_writer.rom_data = ips_patch_from_file(multi_patch_path, rom_writer.rom_data)
@@ -134,16 +134,20 @@ def write_rom_from_gen_data(gen_data_str: str, output_rom_file_name: str) -> Non
     rom_writer.writeBytes(0x79eaa, b"\xa8\xe9\xCA\x9E\xE6\xE5\xD5\xDE\xC5\x06\x06\x07\x90\x82\xAC\x93\xD1\x83\xC1\xC1\xED\x9E\x00\x00\x00\x00\x7E\x86\xF4\xBA\xD5\x91\xD5\xDE\xC5\x06\x09\x05\xF4\x81\x26\x93\xB5\x83\xC1\xC1\xED\x9E\x00\x00\x00\x00\xE6\x86\xF4\xBA\xBC\x91") #morph room, item 1a pickup
     rom_writer.writeBytes(0x7e9a8,b"\xAF\x43\xD8\x7E\x89\x04\x00\xF0\x07\xBD\x00\x00\xAA\x4C\xE6\xE5\xE8\xE8\x60")
     rom_writer.writeBytes(0x786e1, b"\x15") #move morph ball item down 1
+    rom_writer.writeBytes(0x78719, b"\x15") #move morph ball redux item down 1
     rom_writer.writeBytes(0x783cb, b"\x36") #move pit room door out
 
     # Attic Patch -checks for event ("12") that zebes is awake ("00")
     rom_writer.writeBytes(0x7ca5d, b"\x12\xe6\x00")
     # WS big room Patch -make it not wake up
     rom_writer.writeBytes(0x7cb04, b"\x08")
+    # Zigzag opens without grapple
+    rom_writer.writeBytes(0x7881f, b"\x36")
+    # Robots above juggler are always awake (for backdoor WS)
+    rom_writer.writeBytes(0x144b77, b"\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea")
     
     #temporary bypass intro hack (corrupts your save?)
     rom_writer.writeBytes(0x8027,b"\xf4\xa0\x5e\x00")
-
     rom_writer.writeBytes(0x80f4,b"\xA0\x5E\x00\xB9\xC0\xD7\x99\xA2")
 
     rom_writer.finalizeRom(output_rom_file_name)  # writes rom file

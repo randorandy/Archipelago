@@ -17,50 +17,51 @@ from .hack_randomizer.ips import patch as ips_patch
 
 
 box_blue_tbl = {
-    "A": 0x2CC0,
-    "B": 0x2CC1,
-    "C": 0x2CC2,
-    "D": 0x2CC3,
-    "E": 0x2CC4,
-    "F": 0x2CC5,
-    "G": 0x2CC6,
-    "H": 0x2CC7,
-    "I": 0x2CC8,
-    "J": 0x2CC9,
-    "K": 0x2CCA,
-    "L": 0x2CCB,
-    "M": 0x2CCC,
-    "N": 0x2CCD,
-    "O": 0x2CCE,
-    "P": 0x2CCF,
-    "Q": 0x2CD0,
-    "R": 0x2CD1,
-    "S": 0x2CD2,
-    "T": 0x2CD3,
-    "U": 0x2CD4,
-    "V": 0x2CD5,
-    "W": 0x2CD6,
-    "X": 0x2CD7,
-    "Y": 0x2CD8,
-    "Z": 0x2CD9,
+    ### dupes below 
+    "A": 0x2CE0,
+    "B": 0x2CE1, #Confirmed CR
+    "C": 0x2CE2, #Confirmed CR
+    "D": 0x2CE3,
+    "E": 0x2CE4, #Confirmed CR
+    "F": 0x2CE5,
+    "G": 0x2CE6, #Confirmed CR
+    "H": 0x2CE7, #Confirmed CR
+    "I": 0x2CE8, #Confirmed CR
+    "J": 0x2CE9, #Confirmed CR
+    "K": 0x2CEA, #Confirmed CR
+    "L": 0x2CEB, #Confirmed CR
+    "M": 0x2CEC, #Confirmed CR
+    "N": 0x2CED, #Confirmed CR
+    "O": 0x2CEE, #Confirmed CR
+    "P": 0x2CEF, #Confirmed CR
+    "Q": 0x2CF0, #Confirmed CR
+    "R": 0x2CF1, #Confirmed CR
+    "S": 0x2CF2, #Confirmed CR
+    "T": 0x2CF3, #Confirmed CR
+    "U": 0x2CF4, #Confirmed CR
+    "V": 0x2CF5,
+    "W": 0x2CF6,
+    "X": 0x2CF7, 
+    "Y": 0x2CF8, #Confirmed CR
+    "Z": 0x2CF9,
     " ": 0x2C0F,
     "!": 0x2CDF,
     "?": 0x2CDE,
     "'": 0x2CDC,
     ",": 0xACDC,
     ".": 0x2CDA,
-    "-": 0x2CDD,
+    "-": 0x2CFA, #was showing up as a Q  with 2cf0
     "_": 0x000E,  # character used for edges of screen during text box
-    "1": 0x2C01,
-    "2": 0x2C02,
-    "3": 0x2C03,
-    "4": 0x2C04,
-    "5": 0x2C05,
-    "6": 0x2C06,
-    "7": 0x2C07,
-    "8": 0x2C08,
-    "9": 0x2C09,
-    "0": 0x2C00,
+    "1": 0x2C00, #confirmed CR
+    "2": 0x2C01,
+    "3": 0x2C02,
+    "4": 0x2C03,
+    "5": 0x2C04, #confirmed CR
+    "6": 0x2C05, #confirmed CR
+    "7": 0x2C06,
+    "8": 0x2C07,
+    "9": 0x2C08,
+    "0": 0x2C09, #confirmed CR
     "%": 0x2C0A,
 }
 """ item names use this, player names are ascii """
