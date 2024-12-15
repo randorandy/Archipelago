@@ -1,0 +1,147 @@
+index,roomname,region,vanillaitemname,roomid,locationid,hiddenness,altlocationids
+0,Crater Missile,SZM,Item,310000,310000,open,31002C
+71,Crater Power Bomb,SZM,Item,310012,310012,chozo,310026
+72,Gauntlet Power Bomb,SZM,Item,31005A,31005A,open,0
+64,Speed Super,SZM,Item,310222,310222,open,0
+134,Speed Booster,SZM,Item,310228,310228,chozo,0
+7,Outside Bombs Missile,SZM,Item,31023E,31023E,open,0
+2,Varia Grapple Block Missile,SZM,Item,310248,310248,hidden,0
+97,Brinstar Basement Energy Tank,SZM,Item,310264,310264,open,0
+3,Back of Gauntlet Left Missile,SZM,Item,3103D0,3103D0,open,0
+4,Back of Gauntlet Right Missile,SZM,Item,3103D6,3103D6,open,0
+129,Bomb Torizo,SZM,Item,310404,310404,open,0
+98,White Lava Energy Tank,SZM,Item,310432,310432,open,0
+5,Beetom Spark Top Missile,SZM,Item,310464,310464,open,0
+6,Beetom Spark Bottom Missile,SZM,Item,31046A,31046A,open,0
+13,Alpha Missile,SZM,Item,310478,310478,open,0
+73,Etecoons,SZM,Item,3104AC,3104AC,chozo,0
+50,Spore Spawn Super,SZM,Item,3104E4,3104E4,chozo,0
+46,Early Super,SZM,Item,31050C,31050C,open,0
+47,Flooded Cavern Gate Super,SZM,Item,310512,310512,open,0
+99,Early Super Energy,SZM,Item,310518,310518,open,0
+125,Kraid Reserve Tank,SZM,Item,31052C,31052C,chozo,0
+48,Kraid Reserve Super,SZM,Item,310538,310538,open,0
+9,Kraid Lonely Missile,SZM,Item,310550,310550,hidden,0
+74,Mini Kraid Power Bomb,SZM,Item,310588,310588,open,0
+10,Kraid Inverted Chozo Missile,SZM,Item,310608,310608,open,0
+11,Kraid Lower Retro Pillar Missile,SZM,Item,310634,310634,hidden,0
+136,Grapple Beam,SZM,Item,31065C,31065C,open,0
+12,Kraid Eagle Missile,SZM,Item,310676,310676,open,0
+101,Terminator,SZM,Item,31079E,31079E,open,0
+51,Kraid Green Hopper Super,SZM,Item,3107A6,3107A6,open,0
+102,Kraid Mockball Gate Energy Tank,SZM,Item,3107C2,3107C2,open,0
+133,Varia Suit,SZM,Item,3107D0,3107D0,chozo,0
+144,All Bosses Missile,SZM,Item,3107D8,3107D8,open,0
+14,Forget-Me-Not Missile,SZM,Item,310802,310802,hidden,0
+39,Kraid Spark Out Missile,SZM,Item,310816,310816,open,0
+15,Kraid Upper Retro Pillar Missile,SZM,Item,310824,310824,open,0
+75,White Lava Power Bomb,SZM,Item,31084C,31084C,open,0
+105,Kraid Right Shaft Energy Tank,SZM,Item,310860,310860,open,0
+55,Kraid Left Shaft Super,SZM,Item,310876,310876,chozo,0
+18,Kraid Pink Spark Wall Missile,SZM,Item,3108CA,3108CA,open,0
+56,Kraid Pillar Secret Super,SZM,Item,31096E,31096E,open,0
+107,Above Kraid Energy Tank,SZM,Item,3109FA,3109FA,hidden,0
+57,LN Pink Multispark Super Missile,SZM,Item,310AB2,310AB2,open,0
+21,LN Pink Multispark Chozo Missile,SZM,Item,310ABE,310ABE,open,0
+81,LN Save Crumble Power Bomb,SZM,Item,310ACA,310ACA,open,0
+108,Norfair Entrance Energy Tank,SZM,Item,310AFA,310AFA,hidden,310C04
+60,Crocomire Super,SZM,Item,310B00,310B00,open,0
+24,Norfair Lava Dive Missile,SZM,Item,310B24,310B24,hidden,0
+80,Norfair Top Power Bomb,SZM,Item,310B38,310B38,open,0
+61,Bubble Crumble Super,SZM,Item,310B90,310B90,open,0
+132,HiJump,SZM,Item,310BAC,310BAC,chozo,0
+62,Norfair Big Cavern Super,SZM,Item,310BC0,310BC0,open,0
+28,Norfair Top Grapple Missile,SZM,Item,310C22,310C22,open,0
+29,LN Pink Wall Speed Missile,SZM,Item,310C2A,310C2A,hidden,0
+110,White Crag Chozo Energy Tank,SZM,Item,310C3E,310C3E,open,0
+16,White Wall Missile,SZM,Item,310C44,310C44,hidden,0
+67,LN Entry Spark Behind Super,SZM,Item,310C74,310C74,open,0
+114,LN Entry Spark Energy,SZM,Item,310C7A,310C7A,open,0
+25,Norfair Above Lava Dive Missile,SZM,Item,310C9C,310C9C,open,0
+77,Norfair Lava Dive Power Bomb,SZM,Item,310CA8,310CA8,open,0
+66,Norfair Double Chozo Maze Super,SZM,Item,310CD4,310CD4,open,0
+76,Norfair Background Maze Power Bomb,SZM,Item,310D5E,310D5E,hidden,0
+23,Norfair Drapes Missile,SZM,Item,310D6A,310D6A,open,0
+27,Norfair Background Maze Missile,SZM,Item,310D70,310D70,open,0
+137,Wave Beam,SZM,Item,310D76,310D76,chozo,0
+63,Kraid Speedball Super,SZM,Item,310D88,310D88,open,0
+111,Lava Dive Chozo Energy Tank,SZM,Item,310D9C,310D9C,open,0
+30,LN Entry Spark Pillar Missile,SZM,Item,310DFC,310DFC,open,0
+89,Gold Torizo Power Bomb,SZM,Item,310E6E,310E6E,open,0
+87,LN Screw Spark Power Bomb,SZM,Item,310FCA,310FCA,open,0
+68,Donald Duck Maze Super,SZM,Item,310FE0,310FE0,open,0
+32,Donald Duck Missile,SZM,Item,310FE6,310FE6,open,0
+34,LN Pink Chambers Missile,SZM,Item,31102E,31102E,open,0
+115,LN Green Multispark Energy Tank,SZM,Item,311054,311054,hidden,0
+69,LN Cage Super,SZM,Item,3110BA,3110BA,open,0
+82,LN Ten Spark Power Bomb,SZM,Item,3110C0,3110C0,open,0
+103,Retro White Climb Energy,SZM,Item,311274,311274,open,0
+37,Retro White Climb Missile,SZM,Item,31127A,31127A,open,0
+53,Retro White Climb Super,SZM,Item,311298,311298,open,0
+8,Retro Yellow Missile,SZM,Item,3112C0,3112C0,open,0
+100,Retro Mockball Energy Tank,SZM,Item,3112C6,3112C6,open,0
+33,LN Circle Missile,SZM,Item,311300,311300,hidden,0
+143,Screw Attack,SZM,Item,311392,311392,chozo,0
+1,Moat Chozo,SZM,Item,3113C0,3113C0,chozo,0
+83,Tourian Upper Vent Power Bomb,SZM,Item,31142A,31142A,open,0
+86,Tourian Tiny Lava Power Bomb,SZM,Item,311456,311456,hidden,0
+138,Tourian Backdoor X-Ray,SZM,Item,3114FA,3114FA,open,31189E
+85,Tourian Backdoor Power Bomb,SZM,Item,311500,311500,open,3118A4
+116,Tourian Vent Energy Tank,SZM,Item,311552,311552,open,0
+36,Tourian Vent Missile,SZM,Item,311558,311558,open,0
+70,Tourian Spark Super,SZM,Item,3116C0,3116C0,open,0
+35,Tourian Outside Spark Missile,SZM,Item,3116C6,3116C6,open,0
+141,Plasma Beam,SZM,Item,311800,311800,chozo,0
+117,Level 2 Energy Tank,SZM,Item,311A54,311A54,open,0
+88,Ship Hangar Power Bomb,SZM,Item,311BF8,311BF8,hidden,0
+42,Outside Ship Lower Missile,SZM,Item,312320,312320,open,0
+92,Ship Low Crumble Power Bomb,SZM,Item,312390,312390,hidden,0
+240,Ship X-Ray Scope,SZM,Item,3123B0,3123B0,open,0
+49,Ship Purple Low Super,SZM,Item,3123B6,3123B6,open,0
+41,Dachora Escape Missile,SZM,Item,312634,312634,open,0
+52,Outside Ship Hull Super,SZM,Item,312698,312698,hidden,0
+119,Outside Ship Middle Energy Tank,SZM,Item,31269E,31269E,hidden,0
+93,Outside Ship Vent Pirates Power Bomb,SZM,Item,3126E2,3126E2,open,0
+95,Ship Hello Supers Power Bomb,SZM,Item,312812,312812,hidden,0
+127,Ship Reserve Tank,SZM,Item,31284E,31284E,chozo,0
+58,Ship Reserve Super,SZM,Item,312854,312854,open,0
+91,Precious Power Bomb,SZM,Item,312984,312984,hidden,0
+118,Ship Block Spark Energy Tank,SZM,Item,312A30,312A30,open,0
+120,Chozodia Gate Pair Energy Tank,SZM,Item,312AA0,312AA0,open,312A74
+43,Chozodia Gate Pair Missile,SZM,Item,312AA6,312AA6,open,312A7A
+59,Botwoon Super,SZM,Item,312BA0,312BA0,chozo,0
+94,Botwoon Power Bomb,SZM,Item,312BFC,312BFC,chozo,0
+139,Gravity Suit,SZM,Item,312C60,312C60,open,0
+123,Botwoon Energy Tank,SZM,Item,312CD0,312CD0,open,0
+122,Tourian Escape Energy Tank,SZM,Item,312D90,312D90,hidden,0
+113,LN Deep Spark Energy Tank,SZM,Item,312DA6,312DA6,open,0
+130,Charge Beam,SZM,Item,312E10,312E10,chozo,0
+17,Tourian Challenge Missile,SZM,Item,312E84,312E84,open,0
+84,Old Mother Brain Power Bomb,SZM,Item,312FCC,312FCC,open,0
+78,Spikesuit Power Bomb,SZM,Item,312FF0,312FF0,chozo,0
+26,Norfair Bubble Wrap Missile,SZM,Item,313050,313050,hidden,0
+112,Out of LN Energy Tank,SZM,Item,3130D0,3130D0,hidden,0
+79,Spring Ball Wall Power Bomb,SZM,Item,3131FE,3131FE,open,0
+142,Spring Ball,SZM,Item,31320A,31320A,open,0
+124,Crateria Reserve Tank,SZM,Item,313240,313240,chozo,0
+109,Norfair Wood Chozo Energy Tank,SZM,Item,313294,313294,open,0
+65,Norfair Wood Chozo Super Missile,SZM,Item,3132A0,3132A0,open,0
+22,Retro Basement Bomb Missile,SZM,Item,313490,313490,open,0
+140,Space Jump,SZM,Item,313540,313540,chozo,0
+45,Flappy Bird Missile,SZM,Item,313626,313626,open,0
+20,Spazer Right Missile,SZM,Item,313682,313682,open,0
+19,Spazer Left Missile,SZM,Item,313688,313688,open,0
+131,Spazer,SZM,Item,3136B8,3136B8,chozo,0
+135,Ice Beam,SZM,Item,3136E6,3136E6,chozo,0
+40,Norfair Double Pillar Pink Missile,SZM,Item,313740,313740,hidden,0
+121,Chozodia Green Vent Energy Tank,SZM,Item,3137FA,3137FA,open,0
+54,Outside Ship Tube Super,SZM,Item,31382A,31382A,open,0
+128,Morph Ball,SZM,Item,313892,313892,open,0
+38,Billy Mays Missile,SZM,Item,3138F0,3138F0,open,0
+104,Retro Ceiling Energy Tank,SZM,Item,313902,313902,hidden,0
+106,Kraid Left Shaft Energy Tank,SZM,Item,313926,313926,hidden,0
+96,Ridley Energy Tank,SZM,Item,3139D0,3139D0,open,0
+31,LN Chain Hang Missile,SZM,Item,313A20,313A20,open,0
+90,Speed Robots Power Bomb,SZM,Item,3145F1,3145F1,open,0
+44,Security Missile,SZM,Item,3146B3,3146B3,open,0
+126,Norfair Reserve,SZM,Item,3147A7,3147A7,chozo,0
