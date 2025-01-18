@@ -141,10 +141,14 @@ def write_rom_from_gen_data(gen_data_str: str, output_rom_file_name: str) -> Non
     rom_writer.writeBytes(0x7ca5d, b"\x12\xe6\x00")
     # WS big room Patch -make it not wake up
     rom_writer.writeBytes(0x7cb04, b"\x08")
+    # WS front gray door always opens
+    rom_writer.writeBytes(0x787db, b"\x26")
     # Zigzag opens without grapple
     rom_writer.writeBytes(0x7881f, b"\x36")
     # Robots above juggler are always awake (for backdoor WS)
     rom_writer.writeBytes(0x144b77, b"\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea")
+    # And robots need to respond to shots (for backdoor WS)
+    rom_writer.writeBytes(0x145196, b"\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea\xea")
     
     #temporary bypass intro hack (corrupts your save?)
     rom_writer.writeBytes(0x8027,b"\xf4\xa0\x5e\x00")

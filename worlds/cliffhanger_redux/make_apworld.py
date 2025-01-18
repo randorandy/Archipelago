@@ -3,15 +3,17 @@
 import os
 import zlib
 from shutil import copytree, rmtree, make_archive
+import random
 
 # run from working directory hack - working directory will be changed to ..
 
 # directory "SuperJunkoidRandomizer" (with the correct version) needs to be a sibling to "Archipelago"
 # This does not verify the version.
 
-ORIG = "hack"
-TEMP = "hack_temp"
-MOVE = "hack_move"
+ORIG = "cliffhanger_redux"
+tempseed = str(random.randint(0,100000))
+TEMP = "hack_temp"+tempseed
+MOVE = "hack_move"+tempseed
 
 if os.getcwd().endswith("Archipelago"):
     os.chdir("worlds")
@@ -20,10 +22,12 @@ else:
 assert os.getcwd().endswith("worlds"), f"incorrect directory: {os.getcwd()=}"
 
 assert os.path.exists(ORIG), f"{ORIG} doesn't exist"
-assert not os.path.exists(TEMP), f"{TEMP} exists"
-assert not os.path.exists(MOVE), f"{MOVE} exists"
 
-hack_randomizer_dir = os.path.join("..", "..", "HackRandomizer", "src", "hack_randomizer")
+# commented out for testing
+#assert not os.path.exists(TEMP), f"{TEMP} exists"
+#assert not os.path.exists(MOVE), f"{MOVE} exists"
+
+hack_randomizer_dir = os.path.join("cliffhanger_redux","hack_randomizer")
 assert os.path.exists(hack_randomizer_dir), f"{hack_randomizer_dir} doesn't exist"
 
 destination = os.path.join("cliffhanger_redux.apworld")
@@ -36,7 +40,7 @@ copytree(ORIG, TEMP)
 if os.path.exists(os.path.join(TEMP, "__pycache__")):
     rmtree(os.path.join(TEMP, "__pycache__"))
 
-copytree(hack_randomizer_dir, os.path.join(TEMP, "hack_randomizer"))
+#copytree(hack_randomizer_dir, os.path.join(TEMP, "hack_randomizer"))
 
 if os.path.exists(os.path.join(TEMP, "hack_randomizer", "__pycache__")):
     rmtree(os.path.join(TEMP, "hack_randomizer", "__pycache__"))
@@ -59,7 +63,7 @@ with open(os.path.join(TEMP, "hack_randomizer", "crc"), "w") as crc_file:
 with open(os.path.join(TEMP, "lib_crc.py"), "w") as crc_module:
     crc_module.write(f"crc = {crc}\n")
 
-zip_file_name = make_archive("hack", "zip", ".", TEMP)
+zip_file_name = make_archive("cliffhanger_redux", "zip", ".", ORIG)
 print(f"{zip_file_name} -> {destination}")
 os.rename(zip_file_name, destination)
 

@@ -146,16 +146,23 @@ redTower = LogicShortcut(lambda loadout: (
     (canUseBombs in loadout) and
     (pinkDoor in loadout) and
     (
-        (Super in loadout) or
+        (Super in loadout) or #go back up the elevator, super blocks
         (SpaceJump in loadout) or
         (canIBJ in loadout) or
         (HiJump in loadout) or
         (Springball in loadout)
     )
     #consider: you always have an easy way out of red tower thru billy with
+    # CanUseBombs because you either have PB to go around or IBJ to jump up
     # IBJ or
     # PB doing the museum (with Supers) plus, the museum is a PB farm
     # or some other good jumping like SJ, SBJ, HJB
+))
+grayWarehouse = LogicShortcut(lambda loadout: (
+    (redTower in loadout) and
+    (Super in loadout)
+    # CanUseBombs gives you the fork:
+    # you either have PB to go around the museum or IBJ
 ))
 blueTower = LogicShortcut(lambda loadout: (
     (redTower in loadout) and
@@ -207,20 +214,7 @@ wsEntry = LogicShortcut(lambda loadout: (
 brin = LogicShortcut(lambda loadout: (
     (SpeedBooster in loadout) and
     (canUseBombs in loadout) and
-    (energy300 in loadout) and
-    (
-        (Grapple in loadout) or #zigzag escape
-        (
-            (   #plasma escape -does it need more power bombs than 5?
-                (Springball in loadout) or
-                (GravitySuit in loadout)
-                ) and
-            (
-                (Plasma in loadout) or
-                (Screw in loadout)
-                )
-            )
-        )
+    (energy300 in loadout)
 ))
 warehouse = LogicShortcut(lambda loadout: (
     (blueTower in loadout) and
@@ -247,33 +241,7 @@ croc = LogicShortcut(lambda loadout: (
         (HiJump in loadout)
         )
 ))
-wsBack = LogicShortcut(lambda loadout: (
-    (   #phantoon route
-        (wsEntry in loadout) and
-        (Super in loadout)
-        #which includes speed
-        ) or
-    (   #gray warehouse route
-        (redTower in loadout) and
-        (Super in loadout) and
-        (
-            (Wave in loadout) or
-            (Ice in loadout)
-            ) and
-        (SpeedBooster in loadout)
-        ) #can always get up red tower thru billy mays+canbomb
-))
-phantoon = LogicShortcut(lambda loadout: (
-    (Super in loadout) and
-    (Missile in loadout) and
-    (
-        (wsEntry in loadout) or
-        (
-            (wsBack in loadout) and
-            (Xray in loadout)
-            )
-        )
-))
+
 castle = LogicShortcut(lambda loadout: (
     (upperNorfair in loadout) and
     (SpeedBooster in loadout) and
@@ -288,15 +256,8 @@ castle = LogicShortcut(lambda loadout: (
     (hellrun3 in loadout)
 ))
 botwoon = LogicShortcut(lambda loadout: (
-    (redTower in loadout) and
-    (Super in loadout) and #red tower green door
+    (grayWarehouse in loadout) and
     (canUsePB in loadout) and #break the tube
-    #(
-    #    (canIBJ in loadout) or
-    #    (HiJump in loadout) or
-    #    (SpaceJump in loadout) or
-    #    (GravitySuit in loadout) #get up the gray warehouse "is this needed?""
-    #    ) and 
     (   #Get up to botwoon's door
         (Grapple in loadout) or
         (GravitySuit in loadout) or
@@ -323,7 +284,52 @@ bull = LogicShortcut(lambda loadout: (
         (GravitySuit in loadout)
         )
 ))
+jugglerElevatorHellrun = LogicShortcut(lambda loadout: (
+    (castle in loadout) and
+    (hellrun9 in loadout) and
+    ( #to do the under lava morph jumps
+        (GravitySuit in loadout) or
+        (canUseBombs in loadout) or
+        (Springball in loadout)
+        ) and
+    ( #to climb the juggler elevator room
+        (Springball in loadout) or
+        (canIBJ in loadout) or
+        (SpaceJump in loadout) or
+        (HiJump in loadout)
+        ) #castle route -this looks wonky -but it seems right
+))
+wsBack = LogicShortcut(lambda loadout: (
+    # this is the mochtroids save room
+    (   #phantoon route
+        (wsEntry in loadout) and
+        (Super in loadout)
+        #which includes speed
+        ) or
+    (   #gray warehouse route
+        (redTower in loadout) and
+        (Super in loadout) and
+        (
+            (Wave in loadout) or
+            (Ice in loadout)
+            ) and
+        (SpeedBooster in loadout)
+        ) or #can always get up red tower thru billy mays+canbomb
+    (jugglerElevatorHellrun in loadout)
+    #normally combine JEH with wsBack+Springball
+))
 
+phantoon = LogicShortcut(lambda loadout: (
+    (Super in loadout) and
+    (Missile in loadout) and
+    (
+        (wsEntry in loadout) or
+        (
+            (wsBack in loadout) and
+            (Xray in loadout)
+            )
+        )
+))
 gt = LogicShortcut(lambda loadout: (
     (wsBack in loadout) and
     (canUsePB in loadout) and
@@ -340,6 +346,17 @@ ln = LogicShortcut(lambda loadout: (
         (castle in loadout) and
         (gt in loadout)
         ) #must add hellrun requirements per item
+))
+backLab = LogicShortcut(lambda loadout: (
+    (
+        (wsBack in loadout) and
+        (Springball in loadout)
+    ) or
+    (
+        (ln in loadout) and
+        (gt in loadout) and
+        (hellrun5 in loadout) #test this
+    )
 ))
 ridley = LogicShortcut(lambda loadout: (
     (ln in loadout) and
@@ -385,8 +402,10 @@ location_logic: LocationLogicType = {
     ),
     "Baby Kraid Missile": lambda loadout: (
         (brin in loadout)
+        #300 energy included in brin logic
     ),
     "Back Lab Super Missile": lambda loadout: (
+        #room below mama turtle
         (wsBack in loadout) and
         (Springball in loadout) and
         (
@@ -413,8 +432,10 @@ location_logic: LocationLogicType = {
         (Super in loadout)
     ),
     "Blue Heads Power Bomb": lambda loadout: (
-        (redTower in loadout) and
-        (canUsePB in loadout)
+        (redTower in loadout) and 
+        (canUsePB in loadout) 
+        # either you'll have a way to jump up
+        # or super+PB to do the unmorph from above!
     ),
     "Blue Tower Power Bomb": lambda loadout: (
         (warehouse in loadout) and
@@ -434,15 +455,9 @@ location_logic: LocationLogicType = {
         (bull in loadout)
     ),
     "Botwoon Hallway Top Missile": lambda loadout: (
-        (redTower in loadout) and
+        (grayWarehouse in loadout) and
         (Super in loadout) and #red tower green door
         (canUsePB in loadout) #and #break the tube
-        #(
-        #    (canIBJ in loadout) or
-        #    (HiJump in loadout) or
-        #    (SpaceJump in loadout) or
-        #    (GravitySuit in loadout) #get up the gray warehouse
-        #    )
     ),
     "Bowling Energy Tank OR Draygon Chozo": lambda loadout: (
         (phantoon in loadout) or
@@ -463,7 +478,7 @@ location_logic: LocationLogicType = {
         (Super in loadout)
     ),
     "Brin Northeast Speed Super Missile": lambda loadout: (
-        (redTower in loadout) and
+        (grayWarehouse in loadout) and
         (Super in loadout) and
         (SpeedBooster in loadout)
     ),
@@ -471,8 +486,7 @@ location_logic: LocationLogicType = {
         (brin in loadout)
     ),
     "Brinstar Reserve Redux Super": lambda loadout: (
-        (redTower in loadout) and
-        (Super in loadout) and
+        (grayWarehouse in loadout) and
         (SpeedBooster in loadout) and
         (
             (energy200 in loadout) or
@@ -515,42 +529,34 @@ location_logic: LocationLogicType = {
     ),
     "Climb Experiments Power Bomb": lambda loadout: (
         (canUsePB in loadout) and
-        (GravitySuit in loadout) #other ways?
+        (
+            (GravitySuit in loadout) or
+            (
+                (HiJump in loadout) and
+                (Springball in loadout)
+            )
+        )
     ),
     "Climb Missile": lambda loadout: (
-        (Morph in loadout) and
-        (
-            (canBreakBlocks in loadout) or
-            (SpeedBooster in loadout)
-            )
+        (canBreakBlocks in loadout) or
+        (SpeedBooster in loadout)
     ),
     "Construction Zone Missile": lambda loadout: (
         (SpeedBooster in loadout)
     ),
     "Conveyor Super Missile": lambda loadout: (
-        (wsBack in loadout) and
-        (Springball in loadout)
+        (
+            (wsBack in loadout) and
+            (Springball in loadout)
+            ) or
+        (jugglerElevatorHellrun in loadout)
     ),
     "Covern Ceiling Missile": lambda loadout: (
         (
             (wsBack in loadout) and
             (Springball in loadout)
             ) or
-        (
-            (castle in loadout) and
-            (hellrun9 in loadout) and
-            (
-                (GravitySuit in loadout) or
-                (canUseBombs in loadout) or
-                (Springball in loadout)
-                ) and
-            (
-                (Springball in loadout) or
-                (canIBJ in loadout) or
-                (SpaceJump in loadout) or
-                (HiJump in loadout)
-                )
-            ) #route from below -this looks wonky
+        (jugglerElevatorHellrun in loadout)
     ),
     "Crat-Red Elevator Missile": lambda loadout: (
         (canUsePB in loadout) and
@@ -567,8 +573,7 @@ location_logic: LocationLogicType = {
         (
             (Wave in loadout) or
             (Ice in loadout)
-            ) and
-        (Springball in loadout)
+            )
     ),
     "Crateria Kihunters Missile": lambda loadout: (
         (canUsePB in loadout)
@@ -593,6 +598,7 @@ location_logic: LocationLogicType = {
     "Early Hedron Power Bomb": lambda loadout: (
         (brin in loadout) and
         (canUsePB in loadout)
+        #you have speed from brin
     ),
     "Evir Exit Power Bomb": lambda loadout: (
         (phantoon in loadout) and
@@ -629,13 +635,8 @@ location_logic: LocationLogicType = {
             )
     ),
     "Grapple Gladiator Energy Tank": lambda loadout: (
-        (castle in loadout) and
-        (hellrun11 in loadout) and
-        (
-            (GravitySuit in loadout) or
-            (canUseBombs in loadout) or
-            (Springball in loadout)
-            ) #match covern missile
+        #AKA Juggler
+        (jugglerElevatorHellrun in loadout)
         
     ),
     "Gravity Suit": lambda loadout: (
@@ -652,11 +653,15 @@ location_logic: LocationLogicType = {
         (gt in loadout)
     ),
     "Hangman Robot Missile": lambda loadout: (
-        (wsBack in loadout) and
-        (Springball in loadout) and
-        (SpeedBooster in loadout) and
-        (pinkDoor in loadout)
+        (
+            (wsBack in loadout) and
+            (Springball in loadout) and
+            (SpeedBooster in loadout) and
+            (pinkDoor in loadout)
+        ) or
+        (backLab in loadout)
     ),
+    ##RESUME
     "HiJump": lambda loadout: (
         (bull in loadout) and
         (
@@ -776,7 +781,7 @@ location_logic: LocationLogicType = {
         True
     ),
     "Morph Ball Redux": lambda loadout: (
-        (Morph in loadout)
+        True
     ),
     "Museum Energy Tank": lambda loadout: (
         (redTower in loadout) and
@@ -824,7 +829,15 @@ location_logic: LocationLogicType = {
         (phantoon in loadout)
     ),
     "Pink Pillar Missile": lambda loadout: (
-        (brin in loadout)
+        # this is between blue heads and brinstar reserve redux
+        # in the gray warehouse section... why it's called pink pillar idk
+        #(brin in loadout) formerly this was the (faulty?) logic
+        (grayWarehouse in loadout) and
+        (
+            (SpeedBooster in loadout) or
+            (canIBJ in loadout) or
+            (SpaceJump in loadout)
+        )
     ),
     "Plasma Beam": lambda loadout: (
         (brin in loadout) and
@@ -962,10 +975,12 @@ location_logic: LocationLogicType = {
     ),
     "Varia Missile": lambda loadout: (
         (phantoon in loadout) and
-        (wsBack in loadout)
+        (wsBack in loadout) and
+        (Springball in loadout)
     ),
     "Varia Suit": lambda loadout: (
-        (wsBack in loadout)
+        (wsBack in loadout) and
+        (Springball in loadout)
     ),
     "Wave Beam": lambda loadout: (
         (ridley in loadout)
@@ -1011,7 +1026,7 @@ location_logic: LocationLogicType = {
     ),
     "Zigzag Super Missile": lambda loadout: (
         (brin in loadout) and
-        (Grapple in loadout)
+        (Super in loadout)
     ),
 
 }

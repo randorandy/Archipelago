@@ -67,7 +67,7 @@ def exists_apworld_compatible(resource: str) -> bool:
 
     this isn't tested - not sure if it works
     """
-    """
+    
     if _is_apworld:
         (zip_file, stem) = _get_zip_file()
         with zip_file as zf:
@@ -78,7 +78,7 @@ def exists_apworld_compatible(resource: str) -> bool:
             else:
                 return False
     else:
-        return os.path.exists(resource)"""
+        return os.path.exists(resource)
     
     print("Just returning true that this exists_apworld_compatible")
     return True
@@ -91,16 +91,16 @@ def load_library() -> None:
     logging.info("loading hack_randomizer library...")
     for file in zip_file.namelist():
         if file.startswith('cliffhanger_redux/hack_randomizer/'):
-            new_path = file[13:]
+            new_path = file[18:]
             zip_file.getinfo(file).filename = new_path
             zip_file.extract(file, user_path('lib'))
 
 
 if is_apworld():
-    if "lib" not in sys.path:
-        sys.path.append("lib")
+    if "hack_randomizer" not in sys.path:
+        sys.path.append("hack_randomizer")
 
-    lib_dir = os.path.join("lib", "hack_randomizer")
+    lib_dir = os.path.join("hack_randomizer")
     lib_crc_file_name = os.path.join(lib_dir, "crc")
     validated = False
     if os.path.exists(lib_crc_file_name):
@@ -111,6 +111,7 @@ if is_apworld():
             text_crc = lib_crc_file.read()
         if int(text_crc) == crc:
             validated = True
+    validated = True # just for testing
     if not validated:
         if os.path.exists(lib_dir):
             rmtree(lib_dir)
