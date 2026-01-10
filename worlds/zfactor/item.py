@@ -10,11 +10,11 @@ from .zfactor_randomizer.fillAssumed import FillAssumed
 
 classifications: Dict[str, IC] = defaultdict(lambda: IC.progression)
 classifications.update({
-    Items.Reserve[0]: IC.useful,
-    Items.PowerBomb[0]: IC.useful,
-    Items.Energy[0]: IC.useful,  # 12 progression set by create_items
-    Items.Super[0]: IC.useful,  # 5 progression set by create_items
-    Items.Missile[0]: IC.useful  # 1 progression set by create_items
+    Items.Reserve[0]: IC.filler,
+    Items.PowerBomb[0]: IC.filler,
+    Items.Energy[0]: IC.filler,  # 12 progression set by create_items
+    Items.Super[0]: IC.filler,  # 5 progression set by create_items
+    Items.Missile[0]: IC.filler  # 1 progression set by create_items
 })
 
 
