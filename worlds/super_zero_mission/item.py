@@ -15,7 +15,7 @@ classifications.update({
     Items.PowerBomb[0]: IC.useful,
     Items.Energy[0]: IC.useful,  # 12 progression set by create_items
     Items.Super[0]: IC.useful,  # 5 progression set by create_items
-    Items.Missile[0]: IC.useful  # 1 progression set by create_items
+    Items.Missile[0]: IC.filler  # 1 progression set by create_items
 })
 
 
